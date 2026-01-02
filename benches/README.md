@@ -45,6 +45,20 @@ Then you launch it with
   cargo bench --bench unfilter --features=benchmarks
   ```
 
+### Text Metadata Benchmarks
+- **text_metadata**: Benchmarks PNG text chunk operations (tEXt, zTXt, iTXt)
+  ```
+  cargo bench --bench text_metadata
+  ```
+
+### APNG (Animated PNG) Benchmarks
+- **apng**: Benchmarks animated PNG encoding with different frame operations
+  ```
+  cargo bench --bench apng
+  cargo bench --bench apng -- simple        # Simple animations
+  cargo bench --bench apng -- operations    # Frame operations (blend, dispose)
+  ```
+
 ### Internal Optimization Benchmarks
 These require the `benchmarks` feature:
 - **adam7**: Benchmarks Adam7 interlaced image expansion

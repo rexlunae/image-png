@@ -93,3 +93,13 @@ harness = false
 path = "benches/filter_encode.rs"
 name = "filter_encode"
 harness = false
+
+[[bench]]
+path = "benches/text_metadata.rs"
+name = "text_metadata"
+harness = false
+
+[[bench]]
+path = "benches/apng.rs"
+name = "apng"
+harness = false
