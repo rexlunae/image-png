@@ -322,8 +322,8 @@ fn create_test_image_indexed(width: u32, height: u32) -> (Vec<u8>, Vec<u8>) {
     let mut palette = Vec::with_capacity(256 * 3);
     for i in 0..256 {
         palette.push(i as u8);
-        palette.push(((255 - i) % 256) as u8);
-        palette.push(((i * 2) % 256) as u8);
+        palette.push((255 - i) as u8);
+        palette.push((i * 2) as u8);
     }
 
     // Create indexed data

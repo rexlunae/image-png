@@ -82,7 +82,7 @@ fn bench_chunked_write(g: &mut BenchmarkGroup<WallTime>, width: u32, height: u32
     });
 }
 
-// Helper functions to create test images
+// Helper function to create test image
 
 fn create_test_image_rgb(width: u32, height: u32) -> Vec<u8> {
     let mut data = Vec::with_capacity((width * height * 3) as usize);

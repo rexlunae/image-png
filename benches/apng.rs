@@ -166,7 +166,7 @@ fn bench_frame_operations(g: &mut BenchmarkGroup<WallTime>) {
     });
 }
 
-// Helper functions to create animation frames
+// Helper function to create animation frames
 
 fn create_animation_frames(width: u32, height: u32, num_frames: u32) -> Vec<Vec<u8>> {
     let mut frames = Vec::with_capacity(num_frames as usize);
