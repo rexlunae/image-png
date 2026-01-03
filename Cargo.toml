@@ -73,3 +73,33 @@ path = "benches/expand_paletted.rs"
 name = "expand_paletted"
 harness = false
 required-features = ["benchmarks"]
+
+[[bench]]
+path = "benches/encoder.rs"
+name = "encoder"
+harness = false
+
+[[bench]]
+path = "benches/roundtrip.rs"
+name = "roundtrip"
+harness = false
+
+[[bench]]
+path = "benches/streaming.rs"
+name = "streaming"
+harness = false
+
+[[bench]]
+path = "benches/filter_encode.rs"
+name = "filter_encode"
+harness = false
+
+[[bench]]
+path = "benches/text_metadata.rs"
+name = "text_metadata"
+harness = false
+
+[[bench]]
+path = "benches/apng.rs"
+name = "apng"
+harness = false
